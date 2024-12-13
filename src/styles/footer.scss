@@ -1,0 +1,44 @@
+@import "colors";
+
+footer{
+    background-color: $first;
+    height: 200px;
+    width: 100%;
+    padding: 2rem;
+    color: $dark;
+    display: grid;
+    grid-template-columns: 4fr 1fr;//here it is divided in to 5 parts and 4 parts is for 1st div and 1 part for the 2 part
+    
+    > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > h1{
+            font: 700 2rem $text1;
+            text-transform: uppercase;
+            color: $third;
+
+        }
+        >p{
+            font: 500 2rem $text1; 
+        }
+        > h5 {
+            font: 300 2rem $text1; 
+            margin: 1rem 0;
+            text-align: center;
+
+        }
+        >div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                color: $dark;
+                font: 900 1rem $text2; 
+                &:hover{
+                    color: $third;
+                }
+            }
+        }
+    }
+}
